@@ -1,0 +1,27 @@
+name: Contract Jack
+game_slug: contract-jack
+description: Install Contract Jack from installer
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: contract-jack
+    EXE: ContractJack.exe
+  files:
+    - installer: "N/A: Please select the 'Contract Jack 1.1 Patched.exe' installer file"
+
+  game:
+    arch: win64
+    exe: $GAMEDIR/drive_c/$FOLDER/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        description: Installing...
+        executable: installer
+        name:
+          wineexec
+          #wine:
+          #version: wine-ge-lol-8-27-x86_64

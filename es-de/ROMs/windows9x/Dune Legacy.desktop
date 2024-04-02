@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Dune Legacy
+Icon=lutris_dune-legacy
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/dune-legacy
+Categories=Game

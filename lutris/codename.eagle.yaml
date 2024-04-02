@@ -1,0 +1,57 @@
+name: Codename Eagle
+game_slug: codname-eagle
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: Myth_TFL.exe
+  files:
+    - isozip: "N/A: Please select the ISO ZIP file"
+    - update142: "N/A: Please select the Codename-Eagle_Patch_Win_EN_Patch-142.exe file"
+    - update143: "N/A: Please select the Codename-Eagle_Patch_Win_EN_Patch-143.exe file"
+  game:
+    exe: $GAMEDIR/drive_c/Program Files/Myth_TFL/$EXE
+    working_dir: $GAMEDIR/drive_c/Program Files/Myth_TFL
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        file: isozip
+        dst: $GAMEDIR
+    - task:
+        arch: win32
+        name: create_prefix
+        description: Creating Wine prefix...
+        install_mono: false
+    - task:
+        arch: win32
+        name: winetricks
+        description: Setting environment to Windows 98
+        app: win98
+        silent: true
+    - insert-disc:
+        arch: win32
+        description: Please insert Codename Eagle Cd and press "autodetect"
+        requires: SETUP.exe
+    - task:
+        arch: win32
+        description: Installings...
+        executable: $DISC/SETUP.exe
+        name: wineexec
+    - task:
+        arch: win32
+        description: Install Codename-Eagle_Patch_Win_EN_Patch-142.exe and setup...
+        executable: update142
+        name: wineexec
+    - task:
+        arch: win32
+        description: Install Codename-Eagle_Patch_Win_EN_Patch-143.exe and setup...
+        executable: update143
+        name: wineexec
+  wine:
+    dxvk: true
+    esync: false
+    dgvoodoo2: true
+    overrides:
+      ddraw: native

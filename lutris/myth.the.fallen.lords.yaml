@@ -1,0 +1,51 @@
+name: Myth - The Fallen Lords
+game_slug: myth
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: Myth_TFL.exe
+    UPDATE_EXE: MythTFL_15_Update.exe
+  files:
+    - isozip: "N/A: Please select the ISO ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/Program Files/Myth_TFL/$EXE
+    working_dir: $GAMEDIR/drive_c/Program Files/Myth_TFL
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        file: isozip
+        dst: $GAMEDIR
+    - task:
+        arch: win32
+        name: create_prefix
+        description: Creating Wine prefix...
+        install_mono: false
+    - task:
+        arch: win32
+        name: winetricks
+        description: Setting environment to Windows 98
+        app: win98
+        silent: true
+    - insert-disc:
+        arch: win32
+        description: Please insert Myth - The Fallen Lords CD and press "autodetect"
+        requires: startup.exe
+    - task:
+        arch: win32
+        description: Installing Myth - The Fallen Lords...
+        executable: $DISC/startup.exe
+        name: wineexec
+    - task:
+        arch: win32
+        description: Install MythTFL_15_Update.exe...
+        executable: $GAMEDIR/$UPDATE_EXE
+        name: wineexec
+  wine:
+    dxvk: true
+    esync: false
+    dgvoodoo2: true
+    overrides:
+      ddraw: native

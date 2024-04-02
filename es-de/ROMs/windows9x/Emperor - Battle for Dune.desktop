@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Emperor - Battle for Dune
+Icon=lutris_emperor
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/emperor
+Categories=Game
+

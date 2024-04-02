@@ -1,0 +1,20 @@
+name: No One Lives Forever
+game_slug: nolf
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  files:
+    - installer: "N/A: Please select the 'NOLF1_With_Modernizer_Patch.exe' installer file"
+
+  game:
+    arch: win64
+    exe: $GAMEDIR/drive_c/Games/NOLF/NOLF.exe
+    working_dir: $GAMEDIR/drive_c/Games/NOLF/
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        description: Installing...
+        executable: installer
+        name: wineexec

@@ -1,0 +1,36 @@
+name: Call of Duty
+game_slug: cod
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: cod
+    EXE: CoDSP.exe
+    EXE_UO: CoDUOSP.exe
+  files:
+    - zipfile: "N/A: Please select the ZIP file!"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER/
+    prefix: $GAMEDIR
+    launch_configs:
+      - exe: $EXE
+        args: EXTENSION_MAX_YEAR=2008 __GL_ExtensionStringVersion=17700 %command% +set r_ignorehwgamma 1 +set r_mode -1 +set com_hunkmegs 256 +set r_customheight 800 +set r_customwidth 1280 +set r_customaspect 1.6 +set com_introplayed 1 +set cg_fov 90 +set com_maxfps 60 +set r_vsync 0 +set r_fullscreen 1
+        name: CoD
+      - exe: $EXEUO
+        args: EXTENSION_MAX_YEAR=2008 __GL_ExtensionStringVersion=17700 %command% +set r_ignorehwgamma 1 +set r_mode -1 +set com_hunkmegs 256 +set r_customheight 800 +set r_customwidth 1280 +set r_customaspect 1.6 +set com_introplayed 1 +set cg_fov 90 +set com_maxfps 60 +set r_vsync 0 +set r_fullscreen 1
+        name: CodUO
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR/drive_c/$FOLDER/
+  wine:
+    dxvk: true
+    esync: false
+    dgvoodoo2: true
+    overrides:
+      ddraw: native

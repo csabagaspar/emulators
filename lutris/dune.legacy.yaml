@@ -1,0 +1,20 @@
+name: Dune Legacy
+game_slug: dune-legacy
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: DuneLegacy.exe
+  files:
+    - installer: "N/A: Please select the 'Dune Legacy 0.97.02 Setup.exe' installer file"
+  game:
+    exe: $GAMEDIR/drive_c/Program Files/Dune Legacy/$EXE
+    working_dir: $GAMEDIR/drive_c/Program Files/Dune Legacy/
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        description: Installing...
+        executable: installer
+        name: wineexec

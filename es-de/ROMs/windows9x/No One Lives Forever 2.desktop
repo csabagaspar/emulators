@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game
+Comment[en_US]=
+Comment=
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/nolf2
+GenericName[en_US]=
+GenericName=
+Icon=lutris_one-lives-forever-2
+MimeType=
+Name[en_US]=One Lives Forever 2
+Name=One Lives Forever 2
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

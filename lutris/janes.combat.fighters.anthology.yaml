@@ -1,0 +1,60 @@
+name: Jane's Combat Simulations - Fighters Anthology
+game_slug: janes-fighters-anthology
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: FA.exe
+    UPDATE_EXE: fae102.exe
+  files:
+    - isozip: "N/A: Please select the ISO ZIP file"
+    - updatezip: "N/A: Please select the UPDATE ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/JANES/Fighters Anthology/$EXE
+    working_dir: $GAMEDIR/drive_c/JANES/Fighters Anthology
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        file: isozip
+        dst: $GAMEDIR
+    - task:
+        arch: win32
+        name: create_prefix
+        description: Creating Wine prefix...
+    - task:
+        arch: win32
+        name: winetricks
+        description: Setting environment to Windows 98
+        app: win98
+        silent: true
+    - task:
+        arch: win32
+        description: Set gdi...
+        name: winetricks
+        silent: true
+        app: ddr=gdi
+    - insert-disc:
+        arch: win32
+        description: Please insert CD-ROM and press "autodetect"
+        requires: setup.exe
+    - task:
+        arch: win32
+        description: Installing...
+        executable: $DISC/setup.exe
+        name: wineexec
+    - extract:
+        file: updatezip
+        dst: $GAMEDIR/drive_c/Janes/Fighters Anthology
+    - task:
+        arch: win32
+        description: Install update...
+        executable: $GAMEDIR/drive_c/Janes/Fighters Anthology/$UPDATE_EXE
+        name: wineexec
+  wine:
+    dxvk: true
+    esync: false
+    dgvoodoo2: true
+    overrides:
+      ddraw: native

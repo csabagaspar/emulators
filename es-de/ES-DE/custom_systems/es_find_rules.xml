@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!-- This is the ES-DE find rules configuration file for Linux -->
+<ruleList>
+    <emulator name="YUZU">
+        <!-- Nintendo Switch emulator Yuzu -->
+        <rule type="staticpath">
+            <entry>~/apps/yuzu*.AppImage</entry>
+        </rule>
+    </emulator>
+</ruleList>

@@ -1,0 +1,42 @@
+name: Back To The Future - The Game
+game_slug: back-to-the-future
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE1: BackToTheFuture101.exe
+    EXE2: BackToTheFuture102.exe
+    EXE3: BackToTheFuture103.exe
+    EXE4: BackToTheFuture104.exe
+    EXE5: BackToTheFuture105.exe
+  files:
+    - zipfile: "N/A: Please select the ZIP file!"
+  game:
+    exe: Episode 1 - It's About Time!/$EXE1
+    working_dir: $GAMEDIR/drive_c/
+    prefix: $GAMEDIR
+    launch_configs:
+      - exe: Episode 1 - It's About Time!/$EXE1
+        name: Episode 1 - It's About Time!
+      - exe: Episode 2 - Get Tannen!/$EXE2
+        name: Episode 2 - Get Tannen!
+      - exe: Episode 3 - Citizen Brown/$EXE3
+        name: Episode 3 - Citizen Brown
+      - exe: Episode 4 - Double Visions/$EXE4
+        name: Episode 4 - Double Visions
+      - exe: Episode 5 - OUTATIME/$EXE5
+        name: Episode 5 - OUTATIME
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR/drive_c/
+  wine:
+    dxvk: true
+    esync: false
+    dgvoodoo2: true
+    overrides:
+      ddraw: native

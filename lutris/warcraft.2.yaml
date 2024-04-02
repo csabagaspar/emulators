@@ -1,0 +1,25 @@
+name: Warcraft 2
+game_slug: warcraft2
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: warcraft2
+    EXE: Warcraft II BNE.exe
+  files:
+    - zipfile: "N/A: Please select the ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst:
+          $GAMEDIR/drive_c/$FOLDER
+          #    wine:
+          # version: wine-ge-lol-8-27-x86_64

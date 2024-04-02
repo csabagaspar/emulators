@@ -1,0 +1,30 @@
+name: No One Lives Forever 2
+game_slug: nolf2
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  files:
+    - installer: "N/A: Please select the 'No One Lives Forever 2 Install.exe' installer file"
+
+  game:
+    arch: win64
+    exe: $GAMEDIR/drive_c/Games/No One Lives Forever 2/NOLF2.exe
+    working_dir: $GAMEDIR/drive_c/Games/No One Lives Forever 2/
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        description: Installing NOLF2...
+        executable: installer
+        name: wineexec
+    - task:
+        description: Installing mfc42...
+        name: winetricks
+        silent: true
+        app: mfc42
+    - task:
+        description: Installing msvcirt...
+        name: winetricks
+        silent: true
+        app: msvcirt

@@ -1,0 +1,22 @@
+name: Diablo
+game_slug: diablo
+description: Diablo with devilutionx-linux-x86_64.appimage
+slug: installer_identifier
+version: installer
+runner: linux
+script:
+  variables:
+    EXE: devilutionx-linux-x86_64.appimage
+  files:
+    - zipfile: "N/A: Please select the ZIP file!"
+  game:
+    exe: $GAMEDIR/$EXE
+    working_dir: $GAMEDIR
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR

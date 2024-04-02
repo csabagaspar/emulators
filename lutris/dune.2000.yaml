@@ -1,0 +1,25 @@
+name: Dune 2000
+game_slug: dune2000
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: dune2000
+    EXE: Dune2000Launcher.exe
+  files:
+    - zipfile: "N/A: Please select the ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst:
+          $GAMEDIR/drive_c/$FOLDER
+          #wine:
+          #version: wine-ge-lol-8-27-x86_64

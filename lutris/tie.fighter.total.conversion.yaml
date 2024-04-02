@@ -1,0 +1,28 @@
+name: Tie Fighter Total Conversion
+game_slug: tf-tc
+slug: tf-tc
+description: Install Tie Fighter Total Conversion installer
+version: 1.4
+runner: wine
+script:
+  files:
+    - installer: "N/A: Please select the 'TFTC_1.3.exe' installer file"
+
+  game:
+    arch: win64
+    exe: $GAMEDIR/drive_c/Games/Contract Jack/ContractJack.exe
+    working_dir: $GAMEDIR/drive_c/Games/Contract Jack/
+    prefix: $GAMEDIR
+
+  installer:
+    - task:
+        arch: win64
+        description: Creating WINE prefix
+        install_gecko: true
+        install_mono: true
+        name: create_prefix
+        prefix: $GAMEDIR
+    - task:
+        description: Installing Tie Fighter Total Conversion...
+        executable: installer
+        name: wineexec

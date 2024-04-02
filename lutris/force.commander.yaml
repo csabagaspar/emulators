@@ -1,0 +1,22 @@
+name: Force Commander
+game_slug: force-commander
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: force-commander
+    EXE: focom.exe
+  files:
+    - zipfile: "N/A: Please select the ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/Resource/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR/drive_c/$FOLDER

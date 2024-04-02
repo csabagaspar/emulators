@@ -1,0 +1,38 @@
+name: Comanche 3 Gold
+game_slug: comanche3
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: Wc3.exe
+  files:
+    - isozip: "N/A: Please select the ISO ZIP file"
+    - updatezip: "N/A: Please select the Comanche Gold Patch Pack.zip file"
+    - dxglexe: "N/A: Please select the DXGL-0.5.18-win32.exe file"
+  game:
+    exe: $GAMEDIR/drive_c/Program Files (x86)/NovaLogic/Comanche Gold/$EXE
+    working_dir: $GAMEDIR/drive_c/Program Files (x86)/NovaLogic/Comanche Gold
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        file: isozip
+        dst: $GAMEDIR
+    - insert-disc:
+        description: Please insert Comanche 3 Gold CD and press "autodetect"
+        requires: autoplay.bat
+    - task:
+        description: Installing Comanche 3 Gold...
+        executable: $DISC/autoplay.bat
+        name: wineexec
+    - extract:
+        file: updatezip
+        dst: $GAMEDIR/drive_c/Program Files (x86)/NovaLogic/Comanche Gold
+    - task:
+        description: Install DXGL-0.5.18-win32.exe and setup...
+        executable: dxglexe
+        name:
+          wineexec
+          #    wine:
+          #        version: wine-ge-lol-8-27-x86_64

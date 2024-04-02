@@ -1,0 +1,24 @@
+name: Emperor - Battle for Dune
+game_slug: emperor
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    FOLDER: emperor
+    EXE: EMPEROR.EXE
+  files:
+    - zipfile: "N/A: Please select the ZIP file"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: 7z
+        dst: $GAMEDIR/drive_c/$FOLDER
+  #wine:
+  #    version: wine-ge-lol-8-27-x86_64

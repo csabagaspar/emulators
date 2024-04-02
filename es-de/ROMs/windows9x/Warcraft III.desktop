@@ -1,0 +1,7 @@
+
+[Desktop Entry]
+Type=Application
+Name=Warcraft III
+Icon=lutris_warcraft-iii
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/warcraft3
+Categories=Game

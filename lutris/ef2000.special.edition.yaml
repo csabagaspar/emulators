@@ -1,0 +1,31 @@
+name: EF 2000 - Special Edition
+game_slug: ef2000-se
+slug: installer_identifier
+version: installer
+runner: wine
+script:
+  variables:
+    EXE: EF2000_Launcher.exe
+  files:
+    - isozip: "N/A: Please select the ISO ZIP file"
+    - EF2000_Reloaded_104_Installer: "N/A: Please select the EF2000_Reloaded_104_Installer.exe file"
+  game:
+    exe: $GAMEDIR/drive_c/DiD/EF2000 Reloaded/$EXE
+    working_dir: $GAMEDIR/drive_c/DiD/EF2000 Reloaded
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        file: isozip
+        dst: $GAMEDIR
+    - insert-disc:
+        description: Please insert CD-ROM and press "autodetect"
+        requires: setup.exe
+    - task:
+        description: Installing...
+        executable: $DISC/setup.exe
+        name: wineexec
+    - task:
+        description: Install reloaded...
+        executable: $EF2000_Reloaded_104_Installer
+        name: wineexec

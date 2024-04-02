@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!-- This is the ES-DE game systems configuration file for Linux -->
+<systemList>
+    <system>
+        <name>switch</name>
+        <fullname>Nintendo Switch</fullname>
+        <path>%ROMPATH%/switch</path>
+        <extension>.nca .NCA .nro .NRO .nso .NSO .nsp .NSP .xci .XCI</extension>
+        <command label="Ryujinx (Standalone)">%EMULATOR_RYUJINX% %ROM%</command>
+        <command
+      label="Yuzu (Standalone)"
+    >%INJECT%=%BASENAME%.esprefix %EMULATOR_YUZU% -f -g %ROM%</command>
+        <platform>switch</platform>
+        <theme>switch</theme>
+    </system>
+    <system>
+        <name>ep128emu</name>
+        <fullname>Videoton TVC</fullname>
+        <path>%ROMPATH%/ep128emu</path>
+        <extension>.zip .cas .CAS .dsk</extension>
+        <command
+      label="ep128emu"
+    >%EMULATOR_RETROARCH% -L %CORE_RETROARCH%/ep128emu_core_libretro.so %ROM%</command>
+        <platform>ep128emu</platform>
+        <theme>ep128emu</theme>
+  </system>
+</systemList>

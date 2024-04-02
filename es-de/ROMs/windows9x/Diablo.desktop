@@ -1,0 +1,7 @@
+
+[Desktop Entry]
+Type=Application
+Name=Diablo
+Icon=lutris_diablo
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/diablo
+Categories=Game

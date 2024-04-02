@@ -1,0 +1,35 @@
+name: Warcraft III
+game_slug: warcraft3
+description: Warcraft III for for Steam 'deck' user, F9R4Z2 W92H YTV2 26 Z2V2 XZVDXG
+version: installer
+slug: installer_identifier
+runner: wine
+script:
+  variables:
+    FOLDER: warcraft3
+    EXE: Warcraft III.exe
+  files:
+    - zipfile: "N/A: Please select the Warcraft III.zip file"
+    - maps_campaigns_zip: "N/A: Please select the Warcraft III - Maps and Campaigns.zip file"
+    - saved_games_zip: "N/A: Please select the Warcraft III - Saved Games.zip file"
+  game:
+    exe: $GAMEDIR/drive_c/$FOLDER/x86_64/$EXE
+    working_dir: $GAMEDIR/drive_c/$FOLDER
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting...
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR/drive_c/$FOLDER
+    - extract:
+        description: Extracting maps and campaigns...
+        file: maps_campaigns_zip
+        format: zip
+        dst: $GAMEDIR/drive_c/users/deck/Documents/Warcraft III
+    - extract:
+        description: Extracting save games...
+        file: saved_games_zip
+        format: zip
+        dst: $GAMEDIR/drive_c/users/deck/Saved Games/Warcraft III

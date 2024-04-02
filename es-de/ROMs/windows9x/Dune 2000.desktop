@@ -1,0 +1,7 @@
+
+[Desktop Entry]
+Type=Application
+Name=d2000
+Icon=lutris_d2000
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/dune2000
+Categories=Game

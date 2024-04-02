@@ -1,0 +1,22 @@
+name: Dark Souls Remastered
+game_slug: dark-souls-remastered
+slug: dark-souls-remastered
+description: Install Dark Souls Remastered from zip
+version: 1
+runner: wine
+script:
+  files:
+    - zipfile: "N/A: Please select the 'Dark Souls Remastered.zip' file"
+
+  game:
+    arch: win64
+    exe: $GAMEDIR/drive_c/Games/Dark Souls Remastered/DarkSoulsRemastered.exe
+    working_dir: $GAMEDIR/drive_c/Games/Dark Souls Remastered/
+    prefix: $GAMEDIR
+
+  installer:
+    - extract:
+        description: Extracting game
+        file: zipfile
+        format: zip
+        dst: $GAMEDIR/drive_c/Games/Dark Souls Remastered/
