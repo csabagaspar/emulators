@@ -13,3 +13,4 @@ flatpak update --user org.ppsspp.PPSSPP
 
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/
 cp $PPSSPP_INSTALL_DIR/configs/controls.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
+cp $PPSSPP_INSTALL_DIR/configs/ppsspp.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
