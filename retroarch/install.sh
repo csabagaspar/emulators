@@ -12,23 +12,7 @@ flatpak update --user org.libretro.RetroArch
 
 cp $RA_DIR/ra.sh $APPS_DIR
 
-CORES_DIR="$HOME/.var/app/org.libretro.RetroArch/config/retroarch/cores"
-CORES_DOWNLOAD_URL="https://buildbot.libretro.com/nightly/linux/x86_64/latest/"
-
 mkdir -p "$CORES_DIR"
-
-CORES_TO_DOWNLOAD=(
-  fbneo_libretro
-  snes9x_libretro
-  dosbox_pure_libretro
-  #PUAE
-  #VICEx64sc acc
-  #caprice32
-  #genesis plus gx
-  #Fuse
-  #MAME2010
-  #hatari
-)
 
 #Download cores
 for CORE in "${CORES_TO_DOWNLOAD[@]}"; do

@@ -6,6 +6,6 @@ PARENT_PATH=$(
 )
 source $PARENT_PATH/ppsspp.env
 
-#TODO uninstall flatpak
+flatpak uninstall org.ppsspp.PPSSPP
 rm $APPS_DIR/ppsspp.sh
-rm -rf $HOME/.var/app/org.ppsspp.PPSSPP
+rm -rf $PPSSPP_VAR_DIR
