@@ -16,7 +16,6 @@ mkdir -p $CONFIG_RA_DIR
 cp $RA_DIR/configs/retroarch.cfg $CONFIG_RA_DIR
 cp $RA_DIR/configs/retroarch-core-options.cfg $CONFIG_RA_DIR
 
-
 mkdir -p "$CORES_DIR"
 #Download cores
 for CORE in "${CORES_TO_DOWNLOAD[@]}"; do
