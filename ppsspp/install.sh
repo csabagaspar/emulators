@@ -17,3 +17,6 @@ wget -O $PPSSPP_VAR_DIR/config/ppsspp/Cheats/cheat.db https://raw.githubusercont
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/
 cp $PPSSPP_INSTALL_DIR/configs/controls.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
 cp $PPSSPP_INSTALL_DIR/configs/ppsspp.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
+
+mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES/
+cp -r $INSTALLS_DIR/ppsspp/TEXTURES $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES
