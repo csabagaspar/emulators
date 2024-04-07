@@ -11,8 +11,8 @@ cp $PPSSPP_INSTALL_DIR/ppsspp.sh $APPS_DIR
 flatpak install --user flathub org.ppsspp.PPSSPP
 flatpak update --user org.ppsspp.PPSSPP
 
-mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/Cheats/
-wget -O $PPSSPP_VAR_DIR/config/ppsspp/Cheats/cheat.db https://raw.githubusercontent.com/Saramagrean/CWCheat-Database-Plus-/master/cheat.db
+mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/Cheats/
+wget -O $PPSSPP_VAR_DIR/config/ppsspp/PSP/Cheats/cheat.db https://raw.githubusercontent.com/Saramagrean/CWCheat-Database-Plus-/master/cheat.db
 
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/
 cp $PPSSPP_INSTALL_DIR/configs/controls.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
