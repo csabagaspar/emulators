@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<alternativeEmulator>
+	<label>PPSSPP (Standalone)</label>
+</alternativeEmulator>
+<gameList>
+	<game>
+		<path>./God of War - Ghost of Sparta (Europe, Australia) (En,Fr,De,Es,It).cso</path>
+		<name>God of War : Ghost of Sparta</name>
+		<desc>Set in the realm of Greek mythology, God of War: Ghost of Sparta is a single-player game that allows players to take on the powerful role of Spartan warrior Kratos. This new adventure picks up after God of War concludes, telling the story of Kratos' ascension to power as the God of War. In his quest to rid himself of the nightmares that haunt him, Kratos must embark on a journey that will reveal the origins of lost worlds, and finally answer long-awaited questions about his dark past. Armed with the deadly chained Blades of Chaos, he will have to overcome armies of mythological monsters, legions of undead soldiers, and amazingly dangerous and brutal landscapes throughout his merciless quest.</desc>
+		<rating>0.9</rating>
+		<releasedate>20101102T000000</releasedate>
+		<developer>Ready At Dawn</developer>
+		<publisher>Sony Computer Entertainment</publisher>
+		<genre>Beat'em Up</genre>
+		<players>1</players>
+		<playcount>1</playcount>
+		<lastplayed>20240406T115022</lastplayed>
+	</game>
+	<game>
+		<path>./Capcom Classics Collection Reloaded (USA).cso</path>
+		<name>Capcom Classics Collection Reloaded</name>
+		<desc>The second PSP Capcom Classics Collection contains 19 Capcom games. Game sharing is supported and some can be played with up to three players. The following games are included:
+
+1. 1942
+2. 1943
+3. 1943: Midway Kaisen
+2. Commando
+3. Eco Fighters
+4. Exed Exes
+5. Ghosts 'N Goblins
+4. Ghouls 'N Ghosts
+5. Gun.Smoke
+6. HiGeMaru
+7. Knights of the Round
+8. Mercs
+9. Son Son
+10. Street Fighter II
+11. Street Fighter II Champion Edition
+12. Street Fighter II Turbo: Hyper FightingSuper Ghouls 'N Ghosts (SNES version)
+13. The King of Dragons
+14. Vulgus
+
+Any game in progress can be saved. While playing, you collect coins which can be taken into a slot machine to unlock music, concept art and cheats - 895 different items in total.</desc>
+		<rating>0.8</rating>
+		<releasedate>20061024T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Compilation</genre>
+		<players>1</players>
+		<playcount>2</playcount>
+		<lastplayed>20240405T200807</lastplayed>
+	</game>
+	<game>
+		<path>./Capcom Classics Collection Remixed (USA).cso</path>
+		<name>Capcom Classics Collection Remixed</name>
+		<desc>A compilation of Capcom's retro arcade hits. Take a step back in time to relive your memories of these classics or if you're a bit on the younger side you should experience some of the early arcade hits that you missed out on. 
+
+You can play these in several aspect ratios including normal, stretch or, depending on the title, its original vertical orientation. There also a ton of bonus features to unlock and play with. 
+
+The games included:
+
+1. 1941: Counter Attack
+2. Avengers
+3. Bionic Commando
+4. Black Tiger
+5. Block Block
+6. Captain Commando
+7. Final Fight
+8. Forgotten Worlds
+9. Last Duel
+10. Legendary Wings
+11. Magic Sword
+12. Mega Twins
+13. Quiz &amp; Dragons
+14. Section-Z
+15. SideArms
+16. The Speed Rumbler
+17. Street Fighter
+18. Strider
+19. Three Wonders
+20. Varth</desc>
+		<rating>0.8</rating>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Compilation</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./EA Replay.cso</path>
+		<name>EA Replay</name>
+		<desc>This is a compilation of some of Electronic Arts' early titles (1990-1995) emulating the SNES and Genesis versions. The games included are:
+
+1. B.O.B.
+2. Budokan
+3. Desert Strike
+4. Jungle Strike
+5. Haunting Starring Polterguy
+6. Mutant League Football
+7. Road Rash
+8. Road Rash II
+9. Road Rash 3
+10. Syndicate
+11. Ultima VII: The Black Gate
+12. Virtual Pinball
+13. Wing Commander
+14. Wing Commander: The Secret Missions
+
+In some of the games (Road Rash II, Mutant League Football and Budokan) you can go head-to-head in multiplayer. There is also unlockable original game art, the Road Rash games have new music, and you can save your games at any point.</desc>
+		<rating>0.5</rating>
+		<developer>Electronic Arts</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Compilation</genre>
+		<players>1-4</players>
+		<playcount>2</playcount>
+		<lastplayed>20240406T203640</lastplayed>
+	</game>
+	<game>
+		<path>./Tekken 6.cso</path>
+		<name>Tekken 6</name>
+		<desc>A must-have for Tekken aficionados, TEKKEN 6 sees the return of many familiar faces as well as new characters to create the largest line-up the series has ever seen. With a growing roster of fighters, each equipped with their own deadly techniques, moves and attack combinations, TEKKEN 6 will be the best King of Iron Fist Tournaments yet. Adding to the already rich gaming experience, a deeper character customization feature will only further enhance the incredible fighting intensity as players go mano-a-mano. Players can also take the battle online for classic match-ups and to compete for world domination.</desc>
+		<rating>0.8</rating>
+		<releasedate>20091204T000000</releasedate>
+		<developer>Bandai Namco</developer>
+		<publisher>Bandai Namco</publisher>
+		<genre>Fight</genre>
+		<players>1-2</players>
+		<playcount>1</playcount>
+		<lastplayed>20240406T205115</lastplayed>
+	</game>
+	<game>
+		<path>./METAL SLUG Anthology.cso</path>
+		<name>Metal Slug Anthology</name>
+		<desc>Metal Slug 1-6 and X are included in the release, and the games have not been altered in any way. This is the same with the characters and abilities, which have all been kept the same.
+
+The games themselves are done via emulation of the Neo Geo AES versions, except for Metal Slug 6, which is a port of the arcade version.</desc>
+		<rating>0.8</rating>
+		<releasedate>20070220T000000</releasedate>
+		<developer>MEGA Enterprise</developer>
+		<publisher>SNK</publisher>
+		<genre>Beat'em Up</genre>
+		<players>1-2</players>
+		<playcount>4</playcount>
+		<lastplayed>20240407T095605</lastplayed>
+	</game>
+	<game>
+		<path>./God of War - Chains of Olympus (Europe, Australia) (En,Fr,De,Es,It).cso</path>
+		<name>God of War : Chains of Olympus</name>
+		<desc>Unleash the power of the Gods and embark on a merciless quest as Kratos, an ex-Spartan warrior driven to destroy Ares, the God of War. Armed with lethal double chainblades, Kratos must carve through mythology's darkest creatures including Medusa, Cyclops, the Hydra and more, while solving intricate puzzles in breathtaking environments. Driven by pure revenge, nothing can stop Kratos from achieving absolution.</desc>
+		<rating>0.9</rating>
+		<releasedate>20080304T000000</releasedate>
+		<developer>Ready At Dawn</developer>
+		<publisher>Sony Computer Entertainment</publisher>
+		<genre>Beat'em Up</genre>
+		<players>1</players>
+		<playcount>5</playcount>
+		<lastplayed>20240407T103009</lastplayed>
+	</game>
+	<game>
+		<path>./Atari_Classics_Evolved_USA.cso</path>
+		<name>Atari Classics Evolved</name>
+		<desc>Some of the most iconic games ever created, now in the palm of your hands!
+
+Experience 11 timeless games that started the revolution! Presented in their original and evolved designs, featuring updated graphics, gameplay and sound.</desc>
+		<rating>0.7</rating>
+		<releasedate>20071219T000000</releasedate>
+		<developer>Atari</developer>
+		<publisher>Atari</publisher>
+		<genre>Compilation</genre>
+		<players>1-2</players>
+	</game>
+</gameList>

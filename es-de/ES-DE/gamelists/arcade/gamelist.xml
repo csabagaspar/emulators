@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<alternativeEmulator>
+	<label>FinalBurn Neo</label>
+</alternativeEmulator>
+<gameList>
+	<game>
+		<path>./f15se.zip</path>
+		<name>F-15 Strike Eagle</name>
+		<rating>0.8</rating>
+		<playcount>5</playcount>
+		<lastplayed>20240406T165151</lastplayed>
+	</game>
+	<game>
+		<path>./1943.zip</path>
+		<name>1943: The Battle of Midway</name>
+		<rating>0.7</rating>
+		<playcount>5</playcount>
+		<lastplayed>20240406T163300</lastplayed>
+	</game>
+	<game>
+		<path>./64street.zip</path>
+		<name>64th. Street - A Detective Story</name>
+		<rating>0.5</rating>
+		<playcount>2</playcount>
+		<lastplayed>20240406T163340</lastplayed>
+	</game>
+	<game>
+		<path>./sonicwi2.zip</path>
+		<name>Aero Fighters 2</name>
+		<rating>0.8</rating>
+	</game>
+	<game>
+		<path>./invaders.zip</path>
+		<name>Space Invaders / Space Invaders M</name>
+		<rating>0.9</rating>
+		<playcount>4</playcount>
+		<lastplayed>20240406T164915</lastplayed>
+	</game>
+</gameList>

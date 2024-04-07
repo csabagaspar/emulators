@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<alternativeEmulator>
+	<label>FinalBurn Neo</label>
+</alternativeEmulator>
+<gameList>
+	<game>
+		<path>./armwar.zip</path>
+		<name>Armored Warriors</name>
+		<playcount>1</playcount>
+		<lastplayed>20240406T115053</lastplayed>
+	</game>
+	<game>
+		<path>./1944.zip</path>
+		<name>1944: The Loop Master</name>
+		<playcount>1</playcount>
+		<lastplayed>20240406T141222</lastplayed>
+	</game>
+</gameList>

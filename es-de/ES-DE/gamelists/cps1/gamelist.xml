@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<alternativeEmulator>
+	<label>FinalBurn Neo</label>
+</alternativeEmulator>
+<gameList>
+	<game>
+		<path>./1941.zip</path>
+		<name>1941: Counter Attack</name>
+		<playcount>1</playcount>
+		<lastplayed>20240405T214421</lastplayed>
+	</game>
+	<game>
+		<path>./dino.zip</path>
+		<name>Cadillacs and Dinosaurs</name>
+		<playcount>3</playcount>
+		<lastplayed>20240406T141053</lastplayed>
+	</game>
+</gameList>
