@@ -1,2 +1,5 @@
 <?xml version="1.0" ?>
 <string name="ROMDirectory" value="/run/media/mmcblk0p1/roms" />
+<!--
+<string name="ROMDirectory" value="/home/csabagaspar/Games/roms" />
+-->

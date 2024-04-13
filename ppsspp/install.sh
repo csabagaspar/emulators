@@ -24,4 +24,4 @@ cp $PPSSPP_INSTALL_DIR/configs/ppsspp.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYST
 
 #textures setup
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES/
-cp -r $ARCHIVES_DIR/ppsspp/TEXTURES $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES
+cp -r $INSTALLS_DIR/ppsspp/TEXTURES $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES
