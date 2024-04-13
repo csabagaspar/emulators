@@ -6,6 +6,6 @@ PARENT_PATH=$(
 )
 source $PARENT_PATH/ra.env
 
-#flatpak uninstall org.libretro.RetroArch
+flatpak uninstall org.libretro.RetroArch
 rm $APPS_DIR/ra.sh
 rm -rf $RA_VAR_DIR
