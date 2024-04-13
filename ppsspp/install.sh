@@ -20,7 +20,8 @@ wget -O $PPSSPP_VAR_DIR/config/ppsspp/PSP/Cheats/cheat.db https://raw.githubuser
 #config setup
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/
 cp $PPSSPP_INSTALL_DIR/configs/controls.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
-cp $PPSSPP_INSTALL_DIR/configs/ppsspp.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
+cp $PPSSPP_INSTALL_DIR/configs/ppsspp.$SYSTEM.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM
+mv $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/ppsspp.$SYSTEM.ini $PPSSPP_VAR_DIR/config/ppsspp/PSP/SYSTEM/ppsspp.ini 
 
 #textures setup
 mkdir -p $PPSSPP_VAR_DIR/config/ppsspp/PSP/TEXTURES/

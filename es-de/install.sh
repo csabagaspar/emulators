@@ -15,8 +15,13 @@ mv $ESDE_INSTALLS_DIR/$APP_NAME $APPS_DIR
 chmod a+x $APPS_DIR/$APP_NAME
 
 #config copy
-mkdir -p $HOME/ES-DE
-cp -r $ESDE_INSTALLS_DIR/ES-DE $HOME
+mkdir -p $HOME/ES-DE/settings
+mkdir -p $HOME/ES-DE/custom_systems
+
+cp $ESDE_INSTALLS_DIR/ES-DE/settings/es_settings.$SYSTEM.xml $HOME/ES-DE/settings
+mv $HOME/ES-DE/settings/es_settings.$SYSTEM.xml $HOME/ES-DE/settings/es_settings.xml
+
+cp -r $ESDE_INSTALLS_DIR/ES-DE/custom_systems/* $HOME/ES-DE/custom_systems
 
 #copy roms
 cp -r $ESDE_INSTALLS_DIR/roms/* $ROMS_DIR
