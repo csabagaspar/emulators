@@ -12,7 +12,6 @@ flatpak update --user org.libretro.RetroArch
 
 cp $RA_DIR/ra.sh $APPS_DIR
 
-
 #CORES
 mkdir -p "$CORES_DIR"
 ## download cores
