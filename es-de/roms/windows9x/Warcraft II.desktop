@@ -1,0 +1,7 @@
+
+[Desktop Entry]
+Type=Application
+Name=Warcraft II
+Icon=lutris_warcraft-ii
+Exec=env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungame/warcraft2
+Categories=Game
