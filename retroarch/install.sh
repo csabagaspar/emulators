@@ -28,8 +28,16 @@ for entry in "$CORES_DIR"/*.zip; do
   rm -f "$entry"
 done
 
-#CONFIG
+#retroarch.cfg
 mkdir -p $CONFIG_RA_DIR
 cp $RA_DIR/configs/retroarch.$SYSTEM.cfg $CONFIG_RA_DIR
 mv $CONFIG_RA_DIR/retroarch.$SYSTEM.cfg $CONFIG_RA_DIR/retroarch.cfg
 cp $RA_DIR/configs/retroarch-core-options.cfg $CONFIG_RA_DIR
+
+#config
+mkdir -p $CONFIG_RA_DIR/config
+ln -s $INSTALLS_DIR/ra/config $CONFIG_RA_DIR/config
+
+#overlays
+mkdir -p $CONFIG_RA_DIR/overlays
+ln -s $INSTALLS_DIR/ra/overlays $CONFIG_RA_DIR/overlays
