@@ -34,10 +34,17 @@ cp $RA_DIR/configs/retroarch.$SYSTEM.cfg $CONFIG_RA_DIR
 mv $CONFIG_RA_DIR/retroarch.$SYSTEM.cfg $CONFIG_RA_DIR/retroarch.cfg
 cp $RA_DIR/configs/retroarch-core-options.cfg $CONFIG_RA_DIR
 
+#system
+ln -s $INSTALLS_DIR/retroarch/system $CONFIG_RA_DIR/system
+
+#saves
+ln -s $INSTALLS_DIR/retroarch/saves $CONFIG_RA_DIR/saves
+
+#states
+ln -s $INSTALLS_DIR/retroarch/states $CONFIG_RA_DIR/states
+
 #config
-mkdir -p $CONFIG_RA_DIR/config
-ln -s $INSTALLS_DIR/ra/config $CONFIG_RA_DIR/config
+ln -s $INSTALLS_DIR/retroarch/config $CONFIG_RA_DIR/config
 
 #overlays
-mkdir -p $CONFIG_RA_DIR/overlays
-ln -s $INSTALLS_DIR/ra/overlays $CONFIG_RA_DIR/overlays
+ln -s $INSTALLS_DIR/retroarch/overlays $CONFIG_RA_DIR/overlays
