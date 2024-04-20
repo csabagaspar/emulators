@@ -23,7 +23,7 @@ mv $HOME/ES-DE/settings/es_settings.$SYSTEM.xml $HOME/ES-DE/settings/es_settings
 
 cp -r $ESDE_EMU_DIR/ES-DE/custom_systems/* $HOME/ES-DE/custom_systems
 
-#copy roms
+#copy roms (editable start scripts)
 cp -r $ESDE_EMU_DIR/roms/* $ROMS_DIR
 
 #links
