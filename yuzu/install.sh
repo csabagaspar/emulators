@@ -26,4 +26,5 @@ mkdir -p $HOME/.config/yuzu
 mkdir -p $HOME/.config/yuzu/input
 cp $YUZU_DIR/configs/qt-config.$SYSTEM.ini $HOME/.config/yuzu
 mv $HOME/.config/yuzu/qt-config.$SYSTEM.ini $HOME/.config/yuzu/qt-config.ini
+
 cp $YUZU_DIR/configs/input/steamdeck.ini $HOME/.config/yuzu/input

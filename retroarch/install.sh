@@ -37,11 +37,9 @@ cp $RA_DIR/configs/retroarch-core-options.cfg $CONFIG_RA_DIR
 #system
 ln -s $INSTALLS_DIR/retroarch/system $CONFIG_RA_DIR/system
 
-#saves
-ln -s $INSTALLS_DIR/retroarch/saves $CONFIG_RA_DIR/saves
-
-#states
-ln -s $INSTALLS_DIR/retroarch/states $CONFIG_RA_DIR/states
+#saves and states
+#ln -s $INSTALLS_DIR/retroarch/saves $CONFIG_RA_DIR/saves
+#ln -s $INSTALLS_DIR/retroarch/states $CONFIG_RA_DIR/states
 
 #config
 ln -s $INSTALLS_DIR/retroarch/config $CONFIG_RA_DIR/config
